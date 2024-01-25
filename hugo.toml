@@ -1,8 +1,6 @@
-baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Slonser Notes'
 theme = 'archie'
-contentDir = "content"
 
 pygmentsstyle = "monokai"
 pygmentscodefences = true
@@ -13,7 +11,7 @@ paginate=3 # articles per page
 [params]
 	mode="auto" # color-mode → light,dark or auto
 	featherIconsCDN=true
-	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+	subtitle = "Slonser Notes."
 
 # Social Tags
 
