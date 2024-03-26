@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Slonser Notes</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Slonser Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql2: foreign connection bypass</title>
+      <link>//localhost:1313/posts/mysql2-attacker-configuration/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/mysql2-attacker-configuration/</guid>
+      <description>The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.&#xA;Introduction At the end of last year, I encountered an automation system that utilized the node-mysql2 library to connect to user databases and execute queries controlled by them.</description>
+    </item>
+    <item>
+      <title>DOM Purify - untrusted Node bypass</title>
+      <link>//localhost:1313/posts/dompurify-node-type-confusion/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/dompurify-node-type-confusion/</guid>
+      <description>The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.&#xA;Introduction In this article, I aim to elucidate a deficiency in the implementation of DOMPurify that I recently uncovered.</description>
+    </item>
+    <item>
+      <title>CVE-2023-5480: Chrome new XSS Vector</title>
+      <link>//localhost:1313/posts/cve-2023-5480/</link>
+      <pubDate>Thu, 25 Jan 2024 20:00:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/cve-2023-5480/</guid>
+      <description>Chrome XSS The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.&#xA;Preface This article is dedicated to a vulnerability that I managed to discover in the Google Chrome browser at the end of last year, and it also recounts the story of its origin.</description>
+    </item>
+    <item>
+      <title>Who Am I</title>
+      <link>//localhost:1313/posts/who-am-i/</link>
+      <pubDate>Thu, 25 Jan 2024 04:39:37 +0300</pubDate>
+      <guid>//localhost:1313/posts/who-am-i/</guid>
+      <description>Slonser. I am Vsevolod Kokorin (Slonser), security researcher at Solidlab, C4T BuT S4D CTF team player. You can contact with me at Telegram.</description>
+    </item>
+  </channel>
+</rss>
