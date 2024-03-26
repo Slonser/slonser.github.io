@@ -7,6 +7,8 @@ draft = false
 > The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.
 
 # Introduction
+The node-mysql2 library is one of the most popular libraries for connecting to a database in JavaScript, with over 2 million installations per week.
+
 At the end of last year, I encountered an automation system that utilized the node-mysql2 library to connect to user databases and execute queries controlled by them.
 In this article, I want to discuss the issues it causes and provide you with their solutions.
 
