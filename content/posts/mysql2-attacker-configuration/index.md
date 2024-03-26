@@ -46,6 +46,7 @@ connection.query({sql:"SELECT 1;", ... },reponseFunction)
 ```
 
 After that, the passed configuration parameters will be used by the response parsing [function](https://github.com/sidorares/node-mysql2/blob/1609b5393516d72a4ae47196837317fbe75e0c13/lib/parsers/text_parser.js#L14C10-L14C21).
+(It's also worth noting that these same parameters can be passed directly into the database connection, which can be useful if the query argument is filtered.)
 
 If you look closely, you will notice that this function involves code generation. MySQL2 generates a parsing function for each query, which is then cached for optimization purposes. This is important for understanding this article.
 
@@ -148,5 +149,7 @@ As many might understand, this will give us full prototype pollution.
 
 # Conclusion 
 I informed the vendor about these issues 90 days ago and my intentions to publish this material on March 26th. Unfortunately, the vendor did not provide the necessary cooperation, ignoring my emails for months, so this material was released without the final fixes.
+
 Today, a [fix](https://github.com/sidorares/node-mysql2/releases/tag/v3.9.3) was released that addresses the cache manipulation issue. However, the remaining problems remain relevant in the latest version.
+
 If you are using the library in the described scenarios, I strongly advise you to limit the connection parameters and the parameters passed in the query.
