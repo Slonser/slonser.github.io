@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Slonser Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 15:00:00 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>mysql2: foreign connection bypass</title>
+      <title>Exploring IPv6 Zone Identifier</title>
+      <link>//localhost:1313/posts/ipv6-zones/</link>
+      <pubDate>Sat, 06 Apr 2024 15:00:00 +0300</pubDate>
+      <guid>//localhost:1313/posts/ipv6-zones/</guid>
+      <description>Introduction This article is dedicated to a series of tricks utilizing the modern capabilities of IPv6 and the shortcomings of address parser implementations in standard libraries of popular programming languages.&#xA;IPv6 Zone I think many people have an idea of what IPv6 and IPv4 addresses look like:&#xA;2001:0db8:85a3:0000:0000:8a2e:0370:7334 - IPv6 192.168.0.1 - IPv4 When including an IPv6 address in a URL, it needs to be enclosed in square brackets []:</description>
+    </item>
+    <item>
+      <title>MySQL2: Dangers of User-Defined Database Connections</title>
       <link>//localhost:1313/posts/mysql2-attacker-configuration/</link>
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0300</pubDate>
       <guid>//localhost:1313/posts/mysql2-attacker-configuration/</guid>
-      <description>The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.&#xA;Introduction At the end of last year, I encountered an automation system that utilized the node-mysql2 library to connect to user databases and execute queries controlled by them.</description>
+      <description>The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violation of the confidentiality of correspondence are pursued by law.&#xA;Introduction The node-mysql2 library is one of the most popular libraries for connecting to a database in JavaScript, with over 2 million installations per week.</description>
     </item>
     <item>
       <title>DOM Purify - untrusted Node bypass</title>
