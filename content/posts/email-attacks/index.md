@@ -72,7 +72,11 @@ Result:
 ```
 slonser@[::1>"[:<h1>slonser@gmail.com,русский?]
 ```
-So we can input `[` in `[]`, it's no
+So we can input `[` in `[]`.
+
+Also as you can see, UTF-8 characters are used here. The problem is that according to the RFC, an address should contain only ASCII characters. When forwarding to other services, we may encounter the issue where a UTF-8 character is interpreted as separate bytes.
+
+
 ## C#
 Let's look at a standard example of sending emails in C#. The System.Net.Mail namespace provides classes to construct and send email messages. Here's a basic example:
 ```C#
@@ -131,6 +135,10 @@ And you will see output:
 This means we can insert external SMTP commands, reset the current SMTP session using the RSET command, and send arbitrary emails from the service.
 
 As a result, this allows sending emails with any content to any email addresses, which can be used in phishing attacks.
+
+A typical example of such attacks involves websites that send registration or password recovery emails. I have found instances where this can indeed lead to scenarios where we can send arbitrary content as if it were from the company's domain.
+
+Indeed, other patterns that were considered earlier lead to similar problems. However, the address is not always directly inserted into the SMTP packet
 
 # Email spoofing
 Another major issue I encountered is the inconsistency of SMTP servers. The problem is that SMTP servers parse the recipient address differently, which leads to email spoofing.
