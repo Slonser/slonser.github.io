@@ -9,6 +9,11 @@ draft = false
 # Introduction
 This article will be dedicated to my research in the field of email service attacks, including all aspects related to email messages.
 
+# UPDATED
+
+This article presents vulnerabilities related to Microsoft services and C#. I am pleased to report that Microsoft is actively working on fixing them. I will update the article once the bugs are resolved.
+
+
 # Address
 ## Basics
 Let's start with the basics. Within the "From" header tag, the following types of structures exist: 
