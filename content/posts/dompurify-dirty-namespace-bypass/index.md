@@ -36,7 +36,7 @@ What shocked me was that the regular expression lacked an end-of-string anchor, 
 ```
 
 # So... How to exploit this?
-At first glance, this might seem useless. However, it allows you to insert a very important character, :, into a data attribute.
+At first glance, this might seem useless. However, it allows you to insert a very important character, `:`, into a data attribute.
 Since SVG files are essentially XML files with a defined namespace, it becomes possible to define custom namespaces and use their prefixes before an attribute.
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:slonser="http://link_to_namespace">
@@ -65,7 +65,7 @@ When such an SVG file is opened, and the user clicks on the text, our JavaScript
 Many might also notice that the `<a>` tag contains an attribute `xmlns:data-slonser`, which is clearly unsupported and should have been sanitized. You may wonder why it is present in the output.
 Indeed, it won’t be set by DOMPurify and won’t pass sanitization. So why does it appear in the output? The reason lies in this line:
 
-```
+```js
         if (namespaceURI) {
           currentNode.setAttributeNS(namespaceURI, name, value);
         } else {
