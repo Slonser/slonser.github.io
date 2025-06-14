@@ -178,6 +178,8 @@ It's worth noting that everything will look valid to the user, as they'll be ent
 
 # X-Frame-Options: Deny
 
+> Note: fetchLater is intended to send requests after the page is closed, but I'm not sure how I managed to make it work after page closure while writing this article. If I figure it out, I will update the article.
+
 As you may have noticed, the techniques described above have one drawback - they will only work if we can place the target site in an iframe. But what can we do if `X-Frame-Options: Deny` is specified?
 
 Actually, another new API that became available in spring 2025 can help us here - [fetchLater](https://developer.mozilla.org/en-US/docs/Web/API/fetchLater_API)
@@ -201,6 +203,8 @@ for (let timeout of arr)
 1. Log out of the attacker's account
 
 When the user visits the site we're attacking next time and logs in again - after some time, the request that was formed by the attacker will be executed on their behalf, but with the current cookies. It's important to mention again that the victim should not visit the attacker's site again, as this request will already be in the background queue.
+
+
 
 # Conclusion
 
